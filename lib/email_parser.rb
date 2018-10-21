@@ -10,7 +10,7 @@ class EmailParser
   end
   
   def parse(emails)
-    return emails.split(", ")
+    return emails.split(/,\w/)
   end
   
 end
